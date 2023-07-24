@@ -2,11 +2,11 @@
 
 # endpoint
 
-http://hakaru-993159236.ap-northeast-1.elb.amazonaws.com
+http://hakaru-1430077846.ap-northeast-1.elb.amazonaws.com
 
 # redash
 
-http://52.68.121.245
+http://35.75.175.157
 
 ## 初回セットアップ時に入力する項目
 
@@ -24,7 +24,7 @@ http://52.68.121.245
 |||
 |:---|:---|
 |Name|hakaru|
-|Host|hakaru.c4m6eejoxnmy.ap-northeast-1.rds.amazonaws.com|
+|Host|hakaru.cuktn9tqlzz4.ap-northeast-1.rds.amazonaws.com|
 |Port|3306|
 |User|redash|
 |Password|SSM パラメータストアの /hakaru/rds/redash/password の内容|

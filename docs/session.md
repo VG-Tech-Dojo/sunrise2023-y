@@ -28,7 +28,7 @@ https://ap-northeast-1.console.aws.amazon.com/systems-manager/session-manager/se
     ```
     # SSH over Session Manager
     Host i-* mi-*
-        ProxyCommand sh -c "aws-vault exec sunrise2023-z -- aws ssm start-session --target %h --document-name AWS-StartSSHSession --parameters 'portNumber=%p'"
+        ProxyCommand sh -c "aws-vault exec sunrise2023-y -- aws ssm start-session --target %h --document-name AWS-StartSSHSession --parameters 'portNumber=%p'"
     ```
 
 ### 接続方法

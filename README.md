@@ -15,10 +15,10 @@
 ## aws-vault
 
 ```shell
-$ aws-vault add sunrise2023-z
+$ aws-vault add sunrise2023-y
 Enter Access Key Id:
 Enter Secret Key:
-Added credentials to profile "sunrise2023-z" in vault
+Added credentials to profile "sunrise2023-y" in vault
 ```
 
 ## awscli
@@ -26,10 +26,10 @@ Added credentials to profile "sunrise2023-z" in vault
 ```ini
 # ~/.aws/config
 
-[profile sunrise2023-z]
+[profile sunrise2023-y]
 region=ap-northeast-1
 cli_pager=
-mfa_serial=arn:aws:iam::203772305478:mfa/YOUR-USER-NAME
+mfa_serial=arn:aws:iam::821021151543:mfa/YOUR-USER-NAME
 ```
 
 ## docs

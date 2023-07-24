@@ -1,6 +1,6 @@
 SHELL := /bin/bash
 
-AWS_PROFILE        := sunrise2023-z
+AWS_PROFILE        := sunrise2023-y
 AWS_DEFAULT_REGION := ap-northeast-1
 
 AWS_KEYPAIR_NAME            := sunrise2023

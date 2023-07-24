@@ -1,0 +1,17 @@
+DROP USER IF EXISTS 'hakaru'@'10.1.%';
+CREATE USER 'hakaru'@'10.1.%';
+SET PASSWORD FOR 'hakaru'@'10.1.%' = '@@HAKARU_PASSWORD@@';
+GRANT ALL PRIVILEGES ON `hakaru`.* TO 'hakaru'@'10.1.%';
+--
+DROP USER IF EXISTS 'redash'@'10.1.%';
+CREATE USER 'redash'@'10.1.%';
+SET PASSWORD FOR 'redash'@'10.1.%' = '@@REDASH_PASSWORD@@';
+GRANT SELECT ON `hakaru`.* TO 'redash'@'10.1.%';
+--
+CREATE TABLE IF NOT EXISTS `eventlog` (
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `at` datetime DEFAULT NULL,
+  `name` varchar(255) NOT NULL,
+  `value` int(10) unsigned,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;

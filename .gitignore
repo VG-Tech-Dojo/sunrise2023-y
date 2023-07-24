@@ -1,0 +1,19 @@
+#  Local .terraform directories
+**/.terraform/*
+.terraform.lock.hcl
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# .tfvars files
+*.tfvars
+
+# ssh keys
+_files/id_rsa
+_files/id_rsa.pub
+
+# setup rds users and tables
+_files/changed_rds_password.txt
+hakaru/_files/setup_rds.sql
+hakaru/_files/setup_rds.sh

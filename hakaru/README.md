@@ -6,7 +6,7 @@ http://hakaru-1430077846.ap-northeast-1.elb.amazonaws.com
 
 # redash
 
-http://35.75.175.157
+http://18.177.167.132
 
 ## 初回セットアップ時に入力する項目
 

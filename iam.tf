@@ -33,6 +33,10 @@ resource "aws_iam_group_membership" "admin" {
   name  = "admin"
   group = aws_iam_group.admin.name
   users = [for k, v in aws_iam_user.staff : v.name]
+
+  lifecycle {
+    ignore_changes = [users]
+  }
 }
 
 /*
